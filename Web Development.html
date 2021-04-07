@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IceCream Planet</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+       
+            .Section1{
+                display: flex;
+                justify-content: center;
+                
+            }
+            .Left1{
+                flex:1;
+                background-color: brown;
+                
+                
+        }
+            .Right1{
+                flex:2;
+                background-color: brown;
+                
+              
+            }
+            .navigation{
+                list-style-type: none; /* Delete the black dots */
+                text-align: right;
+
+            }
+            .navigation li{
+                display: inline-block; /* Display the UL beside  */
+                margin: 0 10px; /* Add space between the Items */
+            }
+            .navigation li a{
+                font-size: 25px;
+                font-family: 'Spicy Rice', cursive;
+                text-decoration: none; /* Delete the underline in the a Tag */
+                color: brown;
+                background-color: palevioletred;
+                border: 2px solid brown;
+                padding: 3px 10px; /* Original padding*/
+                border-radius: 15px; /* Make rounded corners */
+                margin:auto;
+                
+            } 
+            .navigation li a:hover{ /* This is a PSEUDO Class with :hover */
+                color: wheat;
+                background-color: brown;
+                border: 2px solid rosybrown;
+                padding: 5px 13px; /* Change the original padding*/
+                font-weight: bold;
+            }
+            .Paragraph1{
+                font-family: 'Spicy Rice', cursive;
+                font-size: 110px;
+                color: wheat;
+                font-style: italic;
+                text-align: left;
+                
+            }
+            .Section2{
+                display: flex;
+                justify-content: left;
+                align-items: center;
+            }
+            .Left2, .Right3{
+                flex: 1;
+                background-color: palevioletred;
+                color: brown;
+                border: 5px solid brown;
+                border-radius: 50px;
+                margin: 0px 100px;
+            
+            }
+            h4{
+                color: brown;
+                font-size: 35px;
+                font-family: 'Spicy Rice', cursive;
+                background-color: palevioletred;
+                text-align: center;
+                
+            }
+            .heading{
+                color: brown;
+                font-size: 50px;
+                font-family: 'Spicy Rice', cursive;
+                background-color: palevioletred;
+                text-align: center;
+            }
+            .Paragraph2{
+                font-size: 30px;
+                font-style: italic;
+                font-family: 'Trebuchet MS',  Arial, sans-serif;
+                text-align: center;
+            }
+            img{
+                border-radius: 10px;
+            }
+            
+            .img1{
+                height: 260px;
+                width: 260px;
+                text-align: center;
+                border-radius: 10px;
+                
+            }
+           
+            .img2{
+                flex: 3;
+                height: 690px;
+                width: 550px;
+                border-radius: 10px;
+            }
+            .img3{
+                flex: 3;
+                height: 690px;
+                width: 480px;
+                border-radius: 10px;
+            }
+            .Section3{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .Right3{
+                flex: 1;
+                background-color: palevioletred;
+                color: brown;  
+            }
+            .Right4{
+                flex: 2;
+                justify-content: center;
+                align-items: center;
+            }
+            .Paragraph3{
+                font-size: 30px;
+                color: wheat;
+                font-style: italic;
+                font-family: 'Trebuchet MS',  Arial, sans-serif;
+                text-align: center;
+            }
+            .img4{
+                flex: 2;
+                height: 740px;
+                width: 500px;
+                border-radius: 10px;
+            }
+            .img5{
+                flex: 2;
+                height: 740px;
+                width: 600px;
+                border-radius: 10px;
+            }
+            .Middle4{
+                background-color: palevioletred;
+                color: brown;
+                border: 5px solid brown;
+                border-radius: 50px;
+                padding: 20px;
+                margin: 50px auto;
+            }
+            .Section4{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 20px auto;
+            }
+            .Flexboxes{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .img00{
+                flex: 1;
+                height: 300px;
+                width: 270px;
+                margin: 20px 10px 70px;
+                border-radius: 10px;
+            }
+            .img000{
+                flex: 1;
+                height:380px;
+                width: 270px;
+                margin: 20px 10px 70px;
+                border-radius: 10px;
+            }
+            .Section5{
+                display: flex;
+                justify-content: space-around;
+            }
+            .Left5{
+                flex: 1;
+            }
+            .Middle5{
+                flex: 1;
+                text-align: left;
+                
+            }
+            .Right5{
+                flex: 1;
+                text-align: left;
+            }
+            .navigation2{
+                list-style-type: circle;
+                text-align: left;
+            
+            }
+            .navigation2 li a{
+                color: wheat;
+                font-size: 25px;
+                text-decoration: none;
+                
+            }
+            .Find{
+                font-size: 25px;
+                text-decoration: underline;
+                color: brown;
+                font-family: 'Spicy Rice', cursive;
+                margin:5px auto
+            }
+            .Address{
+                font-size: 20px;
+                color: wheat;
+                font-family: 'Trebuchet MS',  Arial, sans-serif;
+            }
+            .fa-facebook {
+               background: #2a4d99;
+               color: white;
+            }
+            .fa-instagram {
+               background: #eeca55;
+               color: white;
+            }
+            .fa{
+              padding: 20px;
+              font-size: 30px;
+              width: 50px;
+              text-align: center;
+              text-decoration: none;
+            }
+            .fa:hover {
+             opacity: 0.7;
+            }
+
+    </style>
+</head>
+<body style="background-color: salmon;">
+    
+    <div class="Section1">
+        <div class="Left1"><img src="logo.png" alt="IceCream Planet Logo"></div>
+        <div class="Right1">
+            <ul class="navigation">
+               <li><a href="">Home</a>
+               </li>
+               <li><a href="">Products</a>
+               </li>
+               <li><a href="">Blog</a>
+               </li>
+               <li><a href="">Contact</a>
+               </li>
+            </ul>
+            <p class="Paragraph1">"just Delicious"</p>           
+        </div>
+    </div>
+    <div class="Section2">
+        <div class="Left2">
+            <h4>Ice creams</h4>
+            <p class="Paragraph2">Creamy and Smooth with a variety of flavours.<br>
+            From Nutty to Fruity to just plain ice cream.</p>
+        </div>
+        <div class="Middle2"><img class= "img2" src="chocolatecone.jpg" alt="chocolate cone"></div>
+        <div class="Right2"><img class= "img3" src="berriesicecream.jpg" alt="berry ice cream"></div>
+    </div>
+    <div class="Section3">
+        <div class="Left3"><img class= "img4"src="berriesmilkshake.jpg" alt="falling berries milkshake">
+        </div>
+        <div class="Middle3"><img class= "img5"src="chocolatemilkshake.jpg" alt= "chocolate milkshake">
+        </div>
+        <div class="Right3">
+            <h4>Milkshakes</h4>
+            <p class= "Paragraph2">Thick and Tasty in small, medium or HUGE!!</p>
+        </div>
+    </div>
+    
+    <div class="Section4">
+        <div class="Middle4">
+            <h4 class="heading">Create your own "delicious"...</h4>
+            <p class="Paragraph3">At IceCream Planet you can also create your own flavours... <br>your own taste... <br>your own delicious!!!</p>
+        </div>
+    </div>
+
+    <div class="Flexboxes">
+         <div><img class="img000" src="strawberries.jpg" alt="Strawberry Milkshake"></div>
+         <div><img class="img00" src="chocolatecream.jpg" alt="Chocolate ice cream"></div>
+         <div><img class="img00" src="raspberries.jpg" alt="Milkshake with raspeberries"></div>
+         <div><img class="img00" src="chocolateicecream.jpg" alt="Chocolate ice cream on sticks"></div>
+         <div><img class="img000" src="oreomilkshake.jpg" alt="Oreo Milkshake"></div> 
+    </div>
+
+    <div class="Section5">
+        <div class="Left5">
+            <img class= "img1" src="logo.png" alt="IceCream Planet Logo">
+            <ul class= "navigation2">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>   
+        </div>
+        
+        <div class="Middle5">
+            <p class="Address">Rossbergstrasse 100 <br>04435 <br>Leipzig, Germany<br><br>Tel: 0146 555 33303 <br><a href="">Email: info@icecreamplanet.de</a></p>
+            <br>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+
+        <div class="Right5"><p class="Find">Find us:</p>
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="257" height="268" id="gmap_canvas" src="https://maps.google.com/maps?q=leipzig&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://grantorrent-es.com"></a><br><style>.mapouter{position:relative;text-align:right;height:268px;width:257px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:268px;width:257px;}</style></div></div>
+        </div>
+
+    </div>
+   
+   
+</body>
+</html>
